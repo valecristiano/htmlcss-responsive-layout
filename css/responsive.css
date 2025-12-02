@@ -1,5 +1,20 @@
 /* Soluzione qui */
 @media screen and (min-width: 768px) {
+  #topbar {
+    justify-content: flex-start;
+  }
+
+  main {
+    padding: 40px;
+  }
+
+  .recipe-name > .recipe-origin {
+    display: inline;
+  }
+
+  .recipe-name {
+    font-size: 28px;
+  }
 }
 
 @media screen and (min-widht: 992px) {
