@@ -1,44 +1,88 @@
 /* Soluzione qui */
+/* SOLUZIONE BONUS 576px */
+@media screen and (min-width: 576px) {
+  /* l'immagine nella descrizione della ricetta viene circondata dal testo anche su mobile ma solo se c'è spazio sufficiente, quindi a partire da 576px */
+  .presentation img {
+    float: left;
+    margin-right: 7px;
+  }
+  /* I bottoni social si allagano già su dispositivi mobile più grandetti (576px) */
+  .btn {
+    flex-grow: 1;
+  }
+}
+
+/* SOLUZIONE 768px */
 @media screen and (min-width: 768px) {
+  /* Il logo nell'header si allinea a sinistra */
   #topbar {
     justify-content: flex-start;
   }
-
+  /* Il padding del contenuto principale della pagina aumenta */
   main {
     padding: 40px;
   }
-
+  /* Compare il testo "(Dolce Tradizionale)" */
   .recipe-name > .recipe-origin {
     display: inline;
   }
-
+  /* La grandezza del titolo diventa più grande */
   .recipe-name {
     font-size: 28px;
   }
-
+  /* Le informazioni della ricetta sotto il video si dispongono a griglia */
   .quick-notes > ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
   }
   .quick-notes li {
-    flex-shrink: 0;
     min-width: 200px;
   }
-
+  /* I bottoni social si allargano */
   .btn {
     flex-grow: 1;
   }
-
+  /* compare il banner pubblicitario */
   .ads {
     display: block;
   }
-
+  /* l'immagine nella descrizione della ricetta viene circondata dal testo */
   .presentation img {
     float: left;
     margin-right: 7px;
   }
 }
+/* SOLUZIONE 992px */
+/* La grandezza el titolo della ricetta aumenta ancora di più */
+@media screen and (min-width: 992px) {
+  .recipe-name {
+    font-size: 35px;
+  }
+  /* Le informazioni della ricetta tornano a disporsi una sotto l'altra */
+  .quick-notes > ul {
+    display: block;
+  }
+  /* Il video e le altre informazioni della ricetta si dispongono uno accanto all'altro */
+  .recipe-card {
+    display: flex;
+  }
+  .recipe-video {
+    flex-grow: 1;
+  }
 
-@media screen and (min-widht: 992px) {
+  /* Compaiono i nomi delle piattaforme social */
+  .btn > .label {
+    display: inline;
+  }
+  /* Nel footer i dati del sito e il menu di navigazione di dispongono sulla stessa linea ma su lati opposti */
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer address {
+    text-align: left;
+  }
 }
