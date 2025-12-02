@@ -15,6 +15,29 @@
   .recipe-name {
     font-size: 28px;
   }
+
+  .quick-notes > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .quick-notes li {
+    flex-shrink: 0;
+    min-width: 200px;
+  }
+
+  .btn {
+    flex-grow: 1;
+  }
+
+  .ads {
+    display: block;
+  }
+
+  .presentation img {
+    float: left;
+    margin-right: 7px;
+  }
 }
 
 @media screen and (min-widht: 992px) {
